@@ -7,13 +7,13 @@ public class TelefonFabriki {
     // Minumuma ENDIREK....
     // 100-lerle Telefon modeli olsa nece olacaq her model ucun else if else if yazsaq kodumuz pis goruneck
     // Bu qarisiqligin qarshisini almaq ucun Abstract Factory Pattern Yaradilmisdir
-    public static Telefon getTelefon(String Model, String Battery, int Eni, int Uzunu) {
+    public static Telefon getTelefon(String Model, String Battery, int hight, int length) {
 
         Telefon telefon;
         if ("S8".equalsIgnoreCase(Model)) {
-            telefon = new S8(Model, Battery, Eni, Uzunu);
+            telefon = new S8(Model, Battery, hight, length);
         } else if ("Note9".equalsIgnoreCase(Model)) {
-            telefon = new Note9(Model, Battery, Eni, Uzunu);
+            telefon = new Note9(Model, Battery, hight, length);
         } else {
             throw new RuntimeException("Dogru Model Deyil..!!!");
         }
