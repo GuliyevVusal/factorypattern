@@ -12,11 +12,11 @@ public class S8 implements Telefon {
         this.length = length;
         this.hight = hight;
     }
-
+    @Override
     public String getModel() {
         return model;
     }
-
+    @Override
     public String getBattery() {
         return battery;
     }
