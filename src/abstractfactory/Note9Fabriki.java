@@ -11,7 +11,7 @@ public class Note9Fabriki implements TelefonFactory{
 //    yazmaq mumkun deyil Burda Abstract Factory gelir Abstract ne edir ?
 //    Telefon fabriki clasini da bolur S8 ucun ayri Fabrik Note9 ucun ayri fabrik yaradiriq
 //    diger Modeller olarsa onlarada ayri Fabrik yaradiriq class olaraq ve implemenet edirik
-//    TelefonFactoryni bu Bir interfacedir icerisinde getTelefon deye bir metod var ve Belelikle
+//    TelefonFactoryni bu Bir interfacedir icerisinde Telefon tipinde getTelefon deye bir metod var ve Belelikle
 //    Magazalar S8 istedikde s8 fabrikinden Note9 istedikde Note9 fabrikinden Isteyirler
     @Override
     public Telefon getTelefon(String model, String battery, int length, int hight) {
