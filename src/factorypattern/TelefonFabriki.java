@@ -2,10 +2,10 @@ package factorypattern;
 
 public class TelefonFabriki {
     // getTelefon metodunu miye Static olsun dedik ? Cunki Dillerler Telefon yaratmasin
-    // Fabriklerde yaratmasin Fabrika uzerinden direkt olaraq static metodu Cagiracaq diller.Meqsedimiz
+    // TelefonFabriki uzerinden direkt olaraq static getTelefon metodunu Cagiracaq diller.Meqsedimiz
     // Obyekt yaratmaq ishini Fabrikaya vermekdirki Dillerle (wordTelecom) Telefon arasindaki Elaqeni
     // Minumuma ENDIREK....
-    // 100-lerle Telefon modeli olsa nece olacaq her model ucun else if else if yazsaq kodumuz pis goruneck
+    // 100-lerle Telefon modeli olsa nece olacaq her model ucun else if else if yazsaq kodumuz uzancaq 
     // Bu qarisiqligin qarshisini almaq ucun Abstract Factory Pattern Yaradilmisdir
     public static Telefon getTelefon(String Model, String Battery, int hight, int length) {
 
@@ -18,6 +18,6 @@ public class TelefonFabriki {
             throw new RuntimeException("Dogru Model Deyil..!!!");
         }
         return telefon;
-    //  TelefonFabriki getTelefon metodu istifade ederek bize verilen modele ait obyekti yaradir
+   
     }
 }
